@@ -1,0 +1,118 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0; /*margem em cima e embaixo no cabeçalho*/
+}
+
+.centralizaCabecalho { /*relativa à posição do cabeçalho*/
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute; /*absoluta, mas está dentro da relativa, então respeita os limites*/
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline; /*funciona como as linhas, o elemento ocupa só seu próprio espaço*/
+    margin: 0 0 0 15px; /*colocando margem somente à esquerda*/
+}
+
+nav a {
+    text-transform: uppercase; /*coloca em letra maíuscula*/
+    color: #000000;
+    font-weight: bold; /*coloca em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*retira o sublinhado da palavra*/
+}
+
+nav a:hover { /*os links dentro de nav mudarão com ao passar o mouse*/
+    color: #C78C19;
+    text-decoration: underline; /*aparece o sublinhado*/
+}
+
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block; /*orienta os elementos pela linha debaixo, coloca um ao lado do outro*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top; /*orienta os elementos pela linha de cima*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*color width style*/
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {  /*as listas dentro de produtos mudarão com ao clique do mouse*/
+    border-color: #088c19;
+}
+
+.produtos li:hover h2 { /*o título mudará ao passar o mouse pelo li*/
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto_descricao {
+    font-size: 18px;
+}
+
+.produto_preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg"); /*colocando uma imagem de fundo no rodapé (img se copia várias vezes)*/
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
