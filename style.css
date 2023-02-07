@@ -138,3 +138,18 @@ form label, form legend {
     /*scale: ao passar o mouse pelo botão, muda o que há na transition numa escala de 20%*/
     /*Estão um ao lado do outro porque ambos são transoformers. Em linhas diferentes, o primeiro seria ignorado*/
 }
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

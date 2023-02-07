@@ -11,7 +11,8 @@
 <body>
     <header> <!--tag de cabeçalho-->
         <div class="centralizaCabecalho">
-            <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1> <!--imagem de logo, campo ALT descreve a imagem-->
+            <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+            <!--imagem de logo, campo ALT descreve a imagem-->
             <nav>
                 <ul>
                     <li><a href="index_Barbearia.html">Home</a></li>
@@ -25,13 +26,16 @@
     <main>
         <form>
             <label for="nome-sobrenome">Nome e sobrenome</label> <!--label possui display iniline-->
-            <input type="text" id="nome-sobrenome" class="input-padrao" required> <!--input possui display iniline-block-->
+            <input type="text" id="nome-sobrenome" class="input-padrao" required>
+            <!--input possui display iniline-block-->
 
             <label for="email">Email</label>
-            <input type="email" id="email" class="input-padrao" class="input-padrao" required placeholder="seuemail@dominio.com"> <!--requiered torna o campo obrigatório-->
+            <input type="email" id="email" class="input-padrao" class="input-padrao" required
+                placeholder="seuemail@dominio.com"> <!--requiered torna o campo obrigatório-->
 
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--placeholder deixa uma sugestão de mensagem no input-->
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+            <!--placeholder deixa uma sugestão de mensagem no input-->
 
             <label for="mensagem">Mensagem</label>
             <textarea cols="60" rows="10" id="mensagem" class="input-padrao" required></textarea>
@@ -47,8 +51,8 @@
                         id="radio-telefone">Telefone</label>
                 <!--name="XXX" serve para colocar as opções no mesmo grupo, assim só é possível marcar uma-->
 
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp"
-                        id="radio-whatsapp" checked>WhatsApp</label> <!--Se criar um inupt dentro de um label, associa um ao outro-->
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                        checked>WhatsApp</label> <!--Se criar um inupt dentro de um label, associa um ao outro-->
             </fieldset>
 
             <fieldset>
@@ -60,10 +64,36 @@
                 </select>
             </fieldset>
 
-            <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por email?</label> <!--atributo checked deixa uma opção marcada por padrão-->
+            <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por
+                email?</label> <!--atributo checked deixa uma opção marcada por padrão-->
 
             <input type="submit" value="Enviar formulário" class="botao-enviar">
         </form>
+
+        <!-- Tabela também é dividida em cabeçalho, conteúdo e rodapé-->
+        <table> <!--tag de tabela-->
+            <thead> <!--tag de cabeçalho-->
+                <tr>
+                    <th>Dia</th> <!--tag de célula do CABEÇALHO-->
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <!-- Um atributo colspan="x" em uma célula faz a mesclagem delas, onde "x" é o número de células-->
+            </tbody>
+        </table>
     </main>
 
     <footer> <!--tag de rodapé-->
