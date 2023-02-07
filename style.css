@@ -153,3 +153,31 @@ td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+
+/*Estilização da página inicial*/
+.banner { 
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*O "em" é proporção. Nesse caso, a fonte será 2x maior que a padrão*/
+    margin: 0 0 1em 0; /* ordem: cima, direita, abaixo, esquerda. 
+    "1em" nos diz que a margem será proporcional 1x ao tamnho da fonte (if fonte=20px {margin=20px} */
+}
+
+.principal p {
+    margin: 0 0 1em 0; /*margin bottom 1x o tamanho do parágrafo*/
+}
+
+.principal strong {
+    font-weight: bold; /*negrito*/
+}
+
+.principal em {
+    font-style: italic; /*itálico*/
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
