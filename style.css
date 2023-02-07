@@ -126,10 +126,15 @@ form label, form legend {
     font-size: 18px;
     border: none; /* nenhuma borda*/
     border-radius: 5px;
-    transition: 1s background; /*muda a cor do botão com transição 1 segundo*/
+    /*transition: 1s background; muda a cor do botão com transição 1 segundo*/
+    transition: 1s all;
     cursor: pointer; /*mouse troca de seta para mãozinha*/
 }
 
 .botao-enviar:hover {
     background: darkorange; /*ao passar o mouse pelo botão, muda de cor*/
+    transform: scale(1.2);
+    /*rotate: (rotate(70deg) rotaciona o item em 70 graus*/
+    /*scale: ao passar o mouse pelo botão, muda o que há na transition numa escala de 20%*/
+    /*Estão um ao lado do outro porque ambos são transoformers. Em linhas diferentes, o primeiro seria ignorado*/
 }
