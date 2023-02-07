@@ -116,3 +116,20 @@ form label, form legend {
 .checkbox {
     margin: 20px 0;
 }
+
+.botao-enviar {
+    width: 40%; /*botão ocupa 40% da página*/
+    padding: 15px 0;
+    background: orange;
+    color: white; /*cor da letra*/
+    font-weight: bold; /*negrito*/
+    font-size: 18px;
+    border: none; /* nenhuma borda*/
+    border-radius: 5px;
+    transition: 1s background; /*muda a cor do botão com transição 1 segundo*/
+    cursor: pointer; /*mouse troca de seta para mãozinha*/
+}
+
+.botao-enviar:hover {
+    background: darkorange; /*ao passar o mouse pelo botão, muda de cor*/
+}
