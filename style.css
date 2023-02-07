@@ -1,36 +1,54 @@
-header {
-    background: #BBBBBB;
-    padding: 20px 0; /*margem em cima e embaixo no cabeçalho*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:ital,wght@0,200;0,400;1,200&display=swap');
+/* Importando fonte Montserrat do Google Fonts */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Aplicando fonte Montserrat do Google Fonts */
 }
 
-.centralizaCabecalho { /*relativa à posição do cabeçalho*/
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+    /*margem em cima e embaixo no cabeçalho*/
+}
+
+.centralizaCabecalho {
+    /*relativa à posição do cabeçalho*/
     position: relative;
     width: 940px;
     margin: 0 auto;
 }
 
 nav {
-    position: absolute; /*absoluta, mas está dentro da relativa, então respeita os limites*/
+    position: absolute;
+    /*absoluta, mas está dentro da relativa, então respeita os limites*/
     top: 110px;
     right: 0;
 }
 
 nav li {
-    display: inline; /*funciona como as linhas, o elemento ocupa só seu próprio espaço*/
-    margin: 0 0 0 15px; /*colocando margem somente à esquerda*/
+    display: inline;
+    /*funciona como as linhas, o elemento ocupa só seu próprio espaço*/
+    margin: 0 0 0 15px;
+    /*colocando margem somente à esquerda*/
 }
 
 nav a {
-    text-transform: uppercase; /*coloca em letra maíuscula*/
+    text-transform: uppercase;
+    /*coloca em letra maíuscula*/
     color: #000000;
-    font-weight: bold; /*coloca em negrito*/
+    font-weight: bold;
+    /*coloca em negrito*/
     font-size: 22px;
-    text-decoration: none; /*retira o sublinhado da palavra*/
+    text-decoration: none;
+    /*retira o sublinhado da palavra*/
 }
 
-nav a:hover { /*os links dentro de nav mudarão com ao passar o mouse*/
+nav a:hover {
+    /*os links dentro de nav mudarão com ao passar o mouse*/
     color: #C78C19;
-    text-decoration: underline; /*aparece o sublinhado*/
+    text-decoration: underline;
+    /*aparece o sublinhado*/
 }
 
 
@@ -41,14 +59,17 @@ nav a:hover { /*os links dentro de nav mudarão com ao passar o mouse*/
 }
 
 .produtos li {
-    display: inline-block; /*orienta os elementos pela linha debaixo, coloca um ao lado do outro*/
+    display: inline-block;
+    /*orienta os elementos pela linha debaixo, coloca um ao lado do outro*/
     text-align: center;
     width: 30%;
-    vertical-align: top; /*orienta os elementos pela linha de cima*/
+    vertical-align: top;
+    /*orienta os elementos pela linha de cima*/
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 2px solid #000000; /*color width style*/
+    border: 2px solid #000000;
+    /*color width style*/
     border-radius: 10px;
 }
 
@@ -56,11 +77,13 @@ nav a:hover { /*os links dentro de nav mudarão com ao passar o mouse*/
     border-color: #C78C19;
 }
 
-.produtos li:active {  /*as listas dentro de produtos mudarão com ao clique do mouse*/
+.produtos li:active {
+    /*as listas dentro de produtos mudarão com ao clique do mouse*/
     border-color: #088c19;
 }
 
-.produtos li:hover h2 { /*o título mudará ao passar o mouse pelo li*/
+.produtos li:hover h2 {
+    /*o título mudará ao passar o mouse pelo li*/
     font-size: 34px;
 }
 
@@ -81,7 +104,8 @@ nav a:hover { /*os links dentro de nav mudarão com ao passar o mouse*/
 
 footer {
     text-align: center;
-    background: url("bg.jpg"); /*colocando uma imagem de fundo no rodapé (img se copia várias vezes)*/
+    background: url("bg.jpg");
+    /*colocando uma imagem de fundo no rodapé (img se copia várias vezes)*/
     padding: 40px 0;
 }
 
@@ -100,7 +124,8 @@ form {
     margin: 40px 0;
 }
 
-form label, form legend {
+form label,
+form legend {
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
@@ -118,21 +143,27 @@ form label, form legend {
 }
 
 .botao-enviar {
-    width: 40%; /*botão ocupa 40% da página*/
+    width: 40%;
+    /*botão ocupa 40% da página*/
     padding: 15px 0;
     background: orange;
-    color: white; /*cor da letra*/
-    font-weight: bold; /*negrito*/
+    color: white;
+    /*cor da letra*/
+    font-weight: bold;
+    /*negrito*/
     font-size: 18px;
-    border: none; /* nenhuma borda*/
+    border: none;
+    /* nenhuma borda*/
     border-radius: 5px;
     /*transition: 1s background; muda a cor do botão com transição 1 segundo*/
     transition: 1s all;
-    cursor: pointer; /*mouse troca de seta para mãozinha*/
+    cursor: pointer;
+    /*mouse troca de seta para mãozinha*/
 }
 
 .botao-enviar:hover {
-    background: darkorange; /*ao passar o mouse pelo botão, muda de cor*/
+    background: darkorange;
+    /*ao passar o mouse pelo botão, muda de cor*/
     transform: scale(1.2);
     /*rotate: (rotate(70deg) rotaciona o item em 70 graus*/
     /*scale: ao passar o mouse pelo botão, muda o que há na transition numa escala de 20%*/
@@ -149,39 +180,47 @@ thead {
     font-weight: bold;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
 
 /*Estilização da página inicial*/
-.banner { 
+.banner {
     width: 100%;
 }
 
 .titulo-principal {
     text-align: center;
-    font-size: 2em; /*O "em" é proporção. Nesse caso, a fonte será 2x maior que a padrão*/
-    margin: 0 0 1em 0; /* ordem: cima, direita, abaixo, esquerda. 
+    font-size: 2em;
+    /*O "em" é proporção. Nesse caso, a fonte será 2x maior que a padrão*/
+    margin: 0 0 1em 0;
+    /* ordem: cima, direita, abaixo, esquerda. 
     "1em" nos diz que a margem será proporcional 1x ao tamnho da fonte (if fonte=20px {margin=20px} */
-    clear: left; /* Limpa o float para que não seja afetado por ele. Nosso float era a esquerda*/
+    clear: left;
+    /* Limpa o float para que não seja afetado por ele. Nosso float era a esquerda*/
 }
 
 .principal p {
-    margin: 0 0 1em 0; /*margin bottom 1x o tamanho do parágrafo*/
+    margin: 0 0 1em 0;
+    /*margin bottom 1x o tamanho do parágrafo*/
 }
 
 .principal strong {
-    font-weight: bold; /*negrito*/
+    font-weight: bold;
+    /*negrito*/
 }
 
 .principal em {
-    font-style: italic; /*itálico*/
+    font-style: italic;
+    /*itálico*/
 }
 
 .imagem-utensilios {
     width: 120px;
-    float: left; /*flutua o objeto, assim é possível alinhar elementos junto a ele*/
+    float: left;
+    /*flutua o objeto, assim é possível alinhar elementos junto a ele*/
     margin: 0 20px 20px 0;
 }
 
