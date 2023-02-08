@@ -224,6 +224,15 @@ th {
     margin: 0 20px 20px 0;
 }
 
+.mapa {
+    padding: 3em 0; /*espaçamento de 3x o tamanho da fonte do título*/
+}
+
+.mapa p {
+    margin: 0 0 2em 0;
+    text-align: center;
+}
+
 .imagem-beneficios {
     width: 60%;
 }
