@@ -115,11 +115,6 @@ footer {
     margin-top: 20px;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 form {
     margin: 40px 0;
 }
@@ -186,7 +181,7 @@ th {
     padding: 8px 15px;
 }
 
-/*Estilização da página inicial*/
+/*Estilização do index*/
 .banner {
     width: 100%;
 }
@@ -200,6 +195,13 @@ th {
     "1em" nos diz que a margem será proporcional 1x ao tamnho da fonte (if fonte=20px {margin=20px} */
     clear: left;
     /* Limpa o float para que não seja afetado por ele. Nosso float era a esquerda*/
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p {
@@ -227,6 +229,12 @@ th {
 .mapa {
     padding: 3em 0;
     /*espaçamento de 3x o tamanho da fonte do título para cima e para baixo*/
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
@@ -237,6 +245,7 @@ th {
 .beneficios {
     padding: 3em 0;
     /*espaçamento de 3x o tamanho da fonte do título para cima e para baixo, como no .mapa*/
+    background: #888888;
 }
 
 .conteudo-beneficios {
@@ -268,3 +277,4 @@ th {
     width: 560px;
     margin: 2em auto;
 }
+/* Fim da estilazação do index*/
