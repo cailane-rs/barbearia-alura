@@ -305,4 +305,11 @@ ELEMENTO DE EXCLUSÃO - Se deseja selecionar todos os parágrafos que não têm 
 }
 FIM SELETORES AVANÇADOS */
 
+/* Sobre Cálculos com CSS
+A propriedade calc() possibilita cálculos específicos com unidades de proporção diferentes.
+.imagem-utensilios {
+    width: calc(40% - 26px);
+}
+Sugestão: aplique no DevTools e veja o cálculo funcionando */
+
 /* Fim da estilazação do index*/
