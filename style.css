@@ -195,7 +195,7 @@ th {
     "1em" nos diz que a margem será proporcional 1x ao tamanho da fonte (if fonte=20px {margin=20px} */
     clear: left;
     /* Limpa o float para que não seja afetado por ele. Nosso float era a esquerda*/
-    
+
     /* text-shadow: 2px 2px red;
     Demonstrativo que se pode adicionar sombra em textos também. */
 }
@@ -300,5 +300,23 @@ main > p { /*Seleciona os filhos diretos da main*/
     background: red;
 }
 
+/*Perguntando ao navegador o tamanho da tela para entregar um estilo diferente.*/
+@media screen and (max-width: 480px) { /*se o tamanho máximo da tela for 480px, faça...*/
+    .centralizaCabecalho, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
 
 /* Fim da estilização do index*/
