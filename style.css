@@ -281,4 +281,28 @@ th {
     width: 560px;
     margin: 2em auto;
 }
+
+main > p { /*Seleciona os filhos diretos da main*/
+    background: red;
+}
+
+
+/* SELETORES AVANÇADOS
+Se deseja selecionar dentro de outros elementos, como o parágrafo abaixo de uma img
+img + p {
+    background: blue;
+}
+
+Se deseja selecionar dentro de outros elementos, como todos os parágrafos abaixo de uma img
+img ~ p {
+    background: yellow;
+}
+Seletores avançados tÊm a mesma força, um se sobrepõe ao outro
+
+ELEMENTO DE EXCLUSÃO - Se deseja selecionar todos os parágrafos que não têm o id #missao
+.principal p:not(#missao) {
+    background: orange;
+}
+FIM SELETORES AVANÇADOS */
+
 /* Fim da estilazação do index*/
