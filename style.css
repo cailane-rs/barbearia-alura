@@ -192,9 +192,15 @@ th {
     /*O "em" é proporção. Nesse caso, a fonte será 2x maior que a padrão*/
     margin: 0 0 1em 0;
     /* ordem: cima, direita, abaixo, esquerda. 
-    "1em" nos diz que a margem será proporcional 1x ao tamnho da fonte (if fonte=20px {margin=20px} */
+    "1em" nos diz que a margem será proporcional 1x ao tamanho da fonte (if fonte=20px {margin=20px} */
     clear: left;
     /* Limpa o float para que não seja afetado por ele. Nosso float era a esquerda*/
+    color: rgba(0, 0, 0, 0.3); 
+    /*
+        Adicionando opacidade aos títulos.
+        Repare que é rgbA, de Alfa, superfície onde adicionamos opacidade.
+    */
+    font-weight: bold;
 }
 
 .principal {
@@ -275,6 +281,12 @@ th {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1; /*imagem sem opacidade*/
+    transition: 400ms;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.7; /*imagem com opacidade de 30% ao passar o mouse*/
 }
 
 .video {
@@ -287,29 +299,4 @@ main > p { /*Seleciona os filhos diretos da main*/
 }
 
 
-/* SELETORES AVANÇADOS
-Se deseja selecionar dentro de outros elementos, como o parágrafo abaixo de uma img
-img + p {
-    background: blue;
-}
-
-Se deseja selecionar dentro de outros elementos, como todos os parágrafos abaixo de uma img
-img ~ p {
-    background: yellow;
-}
-Seletores avançados tÊm a mesma força, um se sobrepõe ao outro
-
-ELEMENTO DE EXCLUSÃO - Se deseja selecionar todos os parágrafos que não têm o id #missao
-.principal p:not(#missao) {
-    background: orange;
-}
-FIM SELETORES AVANÇADOS */
-
-/* Sobre Cálculos com CSS
-A propriedade calc() possibilita cálculos específicos com unidades de proporção diferentes.
-.imagem-utensilios {
-    width: calc(40% - 26px);
-}
-Sugestão: aplique no DevTools e veja o cálculo funcionando */
-
-/* Fim da estilazação do index*/
+/* Fim da estilização do index*/
