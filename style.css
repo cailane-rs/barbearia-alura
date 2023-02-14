@@ -116,7 +116,7 @@ footer {
 }
 
 form {
-    margin: 40px 0;
+    margin: 40px;
 }
 
 form label,
@@ -166,7 +166,7 @@ form legend {
 }
 
 table {
-    margin: 20px 0 40px;
+    margin: 20px 0 40px 40px;
 }
 
 thead {
@@ -316,6 +316,15 @@ main > p { /*Seleciona os filhos diretos da main*/
 
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
+    }
+
+    .botao-enviar {
+        width: 55%;
+    }
+
+    .produtos li {
+        display: block;
+        margin: 0 5% 5% 5%;
     }
 }
 
